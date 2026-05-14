@@ -1,0 +1,14 @@
+.textarea {
+  width: 100%;
+  max-width: 400px; /* お好みで調整してください */
+  min-height: 150px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  resize: vertical; /* 縦方向のみサイズ変更可能にする */
+  outline: none;
+}
+.textarea:focus {
+  border-color: #CE4298; /* フォーカス時にピンクにする */
+}

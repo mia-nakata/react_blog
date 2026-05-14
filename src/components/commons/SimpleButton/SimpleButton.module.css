@@ -1,0 +1,36 @@
+/* SimpleButton.module.css */
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px; 
+  border-radius: 9999px; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.1em;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+/* クリックした時に少し沈むエフェクト */
+.button:active {
+  transform: scale(0.95);
+}
+
+/* ホバー（マウスオーバー）した時に少しだけ透明にして押せる感を出す */
+.button:hover {
+  opacity: 0.85;
+}
+
+/* 色のバリエーション */
+.black {
+  background-color: #333333;
+}
+
+.pink {
+  background-color: #CE4298; /* 先ほどのロゴと同じピンク色 */
+}

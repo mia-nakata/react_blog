@@ -1,0 +1,13 @@
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.inputBox {
+  width: 24px;
+  height: 24px;
+  accent-color: #2196F3; /* ここで青色を指定！ */
+  cursor: pointer;
+}

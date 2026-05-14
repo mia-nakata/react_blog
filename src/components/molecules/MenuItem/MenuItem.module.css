@@ -1,0 +1,11 @@
+.item {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none; /* リンクの下線を消す */
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease; /* 色が変わる時にフワッとさせる */
+}
+.item:hover {
+  color: #CE4298; /* ホバー時にピンク色にする */
+}

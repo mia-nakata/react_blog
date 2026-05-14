@@ -1,0 +1,9 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* ロゴとボタンを左右に離す */
+  align-items: center;
+  padding: 16px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}

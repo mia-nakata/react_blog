@@ -1,0 +1,40 @@
+/* ThumbsDownButton.module.css */
+
+.buttonContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px; /* MUIの gap: 1.5 (12px) に相当 */
+  cursor: pointer;
+  user-select: none;
+  padding: 8px; /* MUIの padding: 1 (8px) に相当 */
+  transition: transform 0.1s ease;
+}
+
+/* クリックして押し込んだ時のエフェクト */
+.buttonContainer:active {
+  transform: scale(0.95);
+}
+
+/* アイコン共通のサイズ設定 */
+.icon {
+  font-size: 40px !important; /* MUIのデフォルトサイズを強制上書き */
+}
+
+/* バッド済みの色（青） */
+.iconDisliked {
+  color: #2196F3;
+}
+
+/* 未バッドの色（濃いグレー） */
+.iconOutlined {
+  color: #333333;
+}
+
+/* 数字のテキスト設定 */
+.countText {
+  font-size: 36px;
+  font-weight: 800;
+  color: #333333;
+  line-height: 1;
+  margin: 0;
+}
