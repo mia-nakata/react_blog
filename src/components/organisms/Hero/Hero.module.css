@@ -1,0 +1,21 @@
+/* Hero.module.css */
+
+.heroContainer {
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  background-image: url('../../../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ロゴのラッパーを全体の幅に合わせる（必要に応じて） */
+.logoWrapper {
+  background-color: #CE4298;
+  padding: 12px 24px;
+  display: inline-flex;
+}

@@ -8,15 +8,24 @@
   color: #111111;
   padding: 8px;
   user-select: none;
+  width: 80px;
+  min-width: 80px;
 }
-.icon {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 0.8;
+
+/* SVGアイコンに対する設定 */
+.iconSvg {
+  margin-bottom: 6px;
+  transition: transform 0.3s ease; /* スムーズな回転 */
+  transform-origin: center center; /* ど真ん中を軸にする */
 }
+
+/* 開いている時の回転 */
+.iconOpen {
+  transform: rotate(135deg);
+}
+
 .text {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   letter-spacing: 0.1em;
-  margin-top: 4px;
 }
