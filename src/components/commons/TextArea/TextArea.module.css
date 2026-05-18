@@ -8,6 +8,7 @@
   border-radius: 4px;
   resize: vertical; /* 縦方向のみサイズ変更可能にする */
   outline: none;
+  box-sizing: border-box;
 }
 .textarea:focus {
   border-color: #CE4298; /* フォーカス時にピンクにする */

@@ -2,7 +2,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
   display: inline-flex;
   transition: transform 0.2s;
 }

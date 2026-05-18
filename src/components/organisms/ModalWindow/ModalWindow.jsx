@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import styles from './ModalWindow.module.css';
 import CloseButtonSmall from '../../commons/CloseButtonSmall/CloseButtonSmall';
 import RadioButton from '../../commons/RadioButton/RadioButton';
@@ -6,14 +7,27 @@ import SelectBox from '../../commons/SelectBox/SelectBox';
 import TextArea from '../../commons/TextArea/TextArea';
 import SimpleButton from '../../commons/SimpleButton/SimpleButton';
 
-export default function ModalWindow() {
+export default function ModalWindow({ onClose }) {
+  useEffect(() => {
+    // モーダルが開いた時（マウント時）：bodyのスクロールを隠す（止める）
+    document.body.style.overflow = 'hidden';
+
+    // モーダルが閉じる時（アンマウント時）：元の状態に戻す
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []); // 空の配列 [] を渡すことで、最初の一回だけ実行させます
   return (
-    <div className={styles.overlay}>
-      <div className={styles.modal}>
+    // 👇 1. 背景（黒い部分）をクリックした時に閉じる
+    <div className={styles.overlay} onClick={onClose}>
+      
+      {/* 👇 2. モーダルの中身をクリックしても閉じないようにする（伝播を止める） */}
+      <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         
         {/* 上部の画像エリア（Closeボタン付き） */}
         <div className={styles.imageHeader}>
-          <div className={styles.closeBtnWrapper}>
+          {/* 👇 3. Miaさんが作ったバツボタンを囲む div に onClick={onClose} を追加！ */}
+          <div className={styles.closeBtnWrapper} onClick={onClose} style={{ cursor: 'pointer' }}>
             <CloseButtonSmall />
           </div>
         </div>

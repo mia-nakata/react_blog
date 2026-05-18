@@ -16,11 +16,12 @@
 .modal {
   background-color: #ffffff;
   width: 90%;
-  max-width: 600px;
-  max-height: 90vh; /* 画面からはみ出さないように */
-  overflow-y: auto; /* スクロール可能にする */
+  max-height: 90vh;
+  overflow-y: auto;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  box-sizing: border-box;
 }
 
 /* 上部の画像ダミーエリア */
@@ -44,7 +45,8 @@
 
 /* コンテンツ内側の余白 */
 .content {
-  padding: 32px;
+  margin-inline: auto;
+  padding: 16px;
 }
 
 .title {
@@ -77,19 +79,18 @@
 /* ラジオボタンとチェックボックスを3列に並べる魔法 */
 .grid3 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px 8px; /* 縦の隙間16px、横の隙間8px */
-}
-
-/* スマホサイズでは1列にする */
-@media (max-width: 480px) {
-  .grid3 {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 16px 8px;
+  margin-top: 8px;
 }
 
 .submitWrapper {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.submitWrapper button {
+  width: 100%;
+  padding: 10px 0;
 }

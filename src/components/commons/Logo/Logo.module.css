@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@700;900&display=swap');
 
 .logo {
-  /* ロゴらしい太くて力強いフォント設定 */
   font-family: 'Lexend Peta', sans-serif;
-  font-size: 28px;
-  font-weight: 900; /* 一番太くする */
-  text-transform: uppercase; /* 強制的に大文字にする */
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
   display: inline-block;
   user-select: none;
+  letter-spacing: -12%;
 }
 
 /* 色のバリエーション */
@@ -17,7 +17,7 @@
 }
 
 .pink {
-  color: #CD3796; /* 画像に近いピンク色 */
+  color: #CD3796;
 }
 
 .white {

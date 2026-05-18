@@ -1,14 +1,16 @@
 import styles from './CardContent.module.css';
-import UpAndDownBox from '../../molecules/UpAndDownBox/UpAndDownBox'; // 先ほど作った分子コンポーネント
+import UpAndDownBox from '../../molecules/UpAndDownBox/UpAndDownBox';
 
-export default function CardContent({ title = "Cat , catherine", subtitle = "syo motoyama" }) {
+// 👇 引数の { } の中で likes と dislikes をしっかり受け取ります
+export default function CardContent({ title, subtitle, likes, dislikes }) {
   return (
     <div className={styles.container}>
       <div className={styles.textWrapper}>
         <h3 className={styles.title}>{title}</h3>
         <p className={styles.subtitle}>{subtitle}</p>
       </div>
-      <UpAndDownBox />
+      {/* 👇 受け取った likes と dislikes をさらに UpAndDownBox に引き渡します */}
+      <UpAndDownBox likes={likes} dislikes={dislikes} />
     </div>
   );
 }

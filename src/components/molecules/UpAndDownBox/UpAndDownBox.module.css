@@ -1,5 +1,5 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 24px; /* ボタン同士の隙間 */
+  gap: 1rem;
 }
