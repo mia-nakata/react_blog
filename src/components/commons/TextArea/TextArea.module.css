@@ -1,6 +1,5 @@
 .textarea {
   width: 100%;
-  max-width: 400px; /* お好みで調整してください */
   min-height: 150px;
   padding: 12px;
   font-size: 16px;
