@@ -1,4 +1,4 @@
-import styles from '../CheckBox/Input.module.css'; // CheckBoxのCSSを読み込む
+import styles from '../CheckBox/Input.module.css';
 
 export default function RadioButton({ label, name }) {
   return (

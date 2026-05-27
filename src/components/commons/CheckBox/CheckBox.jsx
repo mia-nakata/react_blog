@@ -1,4 +1,4 @@
-import styles from './Input.module.css'; // RadioButtonと同じCSSを使い回せます
+import styles from './Input.module.css';
 
 export default function CheckBox({ label }) {
   return (

@@ -81,7 +81,6 @@ function App() {
           boxSizing: 'border-box',
         }}
       >
-        {/* ブログ記事セクション */}
         <div style={{ marginBottom: '40px', textAlign: 'center' }}>
           <SectionHeader>Latest Blog Posts</SectionHeader>
         </div>
@@ -93,13 +92,11 @@ function App() {
             gap: '18px 16px',
           }}
         >
-          {/* 💡 データ配列をループさせて、Cardコンポーネントにデータを渡します */}
           {blogPosts.map((post) => (
             <Card key={post.id} data={post} />
           ))}
         </div>
 
-        {/* フィードバックセクション */}
         <div
           style={{
             marginTop: '80px',
@@ -122,7 +119,6 @@ function App() {
             make BAMOS DESIGN even better.
           </p>
           <div style={{ marginTop: '24px' }}>
-            {/* 💡 黒いFeedbackボタンを配置 */}
             <SimpleButton variant="black" onClick={() => setIsModalOpen(true)}>
               Feedback
             </SimpleButton>
@@ -132,7 +128,6 @@ function App() {
 
       {isModalOpen && <ModalWindow onClose={() => setIsModalOpen(false)} />}
 
-      {/* フッターセクション（黒背景にピンクのロゴ） */}
       <footer
         style={{
           background: 'linear-gradient(180deg, #2D0000 0%, #000000 100%)',

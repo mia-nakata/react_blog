@@ -13,17 +13,14 @@ export default function ThumbsDownButton({ initialCount = 12345 }) {
   };
 
   return (
-    // Boxの代わりに div を使い、CSSモジュールのクラスを当てます
     <div className={styles.buttonContainer} onClick={handleToggle}>
       
-      {/* 状態によってアイコンと色（クラス）を切り替えます */}
       {disliked ? (
         <ThumbDownIcon className={`${styles.icon} ${styles.iconDisliked}`} />
       ) : (
         <ThumbDownOutlinedIcon className={`${styles.icon} ${styles.iconOutlined}`} />
       )}
       
-      {/* Typographyの代わりに span を使います */}
       <span className={styles.countText}>
         {count}
       </span>

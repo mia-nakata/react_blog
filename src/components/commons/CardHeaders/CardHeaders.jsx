@@ -1,5 +1,5 @@
 import styles from './CardHeaders.module.css';
-import CloseButtonSmall from '../CloseButtonSmall/CloseButtonSmall'; // さっき作ったボタンを読み込む
+import CloseButtonSmall from '../CloseButtonSmall/CloseButtonSmall';
 
 export default function CardHeaders({ title = "Cat , catherine", subtitle = "syo motoyama" }) {
   return (

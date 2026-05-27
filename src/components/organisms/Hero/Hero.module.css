@@ -13,7 +13,6 @@
   align-items: center;
 }
 
-/* ロゴのラッパーを全体の幅に合わせる（必要に応じて） */
 .logoWrapper {
   background-color: #CE4298;
   padding: 12px 24px;

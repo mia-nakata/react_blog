@@ -8,7 +8,6 @@ export default function Card({ data }) {
   return (
     <div className={styles.card}>
       <PictureItem imgUrl={data.img} />
-      {/* 👇 ここで likes と dislikes を確実に CardContent に引き渡します */}
       <CardContent 
         title={data.title} 
         subtitle={data.author} 

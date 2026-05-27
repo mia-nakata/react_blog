@@ -9,27 +9,22 @@
   transition: transform 0.1s ease;
 }
 
-/* クリックして押し込んだ時のエフェクト */
 .buttonContainer:active {
   transform: scale(0.95);
 }
 
-/* アイコン共通のサイズ設定 */
 .icon {
-  font-size: 16px !important; /* MUIのデフォルトサイズを強制上書き */
+  font-size: 16px !important;
 }
 
-/* いいね済みの色（ピンク） */
 .iconLiked {
   color: #E91E63;
 }
 
-/* 未いいねの色（濃いグレー） */
 .iconOutlined {
   color: #333333;
 }
 
-/* 数字のテキスト設定 */
 .countText {
   font-size: 12px;
   font-weight: 700;

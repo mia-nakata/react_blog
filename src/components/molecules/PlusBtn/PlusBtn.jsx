@@ -12,7 +12,6 @@ export default function PlusBtn({ onClick }) {
   return (
     <button className={styles.button} onClick={handleClick}>
       
-      {/* CSSの箱ではなく、SVG（画像データ）を直接描画します */}
       <svg
         className={`${styles.iconSvg} ${isOpen ? styles.iconOpen : ''}`}
         width="28" 
@@ -20,11 +19,9 @@ export default function PlusBtn({ onClick }) {
         viewBox="0 0 28 28"
         fill="none"
         stroke="#111111"
-        strokeWidth="3" /* 線の太さ！ここを 3 や 4 にすると太くなります */
+        strokeWidth="3"
       >
-        {/* 横線 */}
         <path d="M2 14L26 14" />
-        {/* 縦線 */}
         <path d="M14 2L14 26" />
       </svg>
       

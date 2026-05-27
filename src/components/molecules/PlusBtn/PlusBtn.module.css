@@ -12,14 +12,12 @@
   min-width: 80px;
 }
 
-/* SVGアイコンに対する設定 */
 .iconSvg {
   margin-bottom: 6px;
-  transition: transform 0.3s ease; /* スムーズな回転 */
-  transform-origin: center center; /* ど真ん中を軸にする */
+  transition: transform 0.3s ease;
+  transform-origin: center center;
 }
 
-/* 開いている時の回転 */
 .iconOpen {
   transform: rotate(135deg);
 }
