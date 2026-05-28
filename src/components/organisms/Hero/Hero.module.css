@@ -18,3 +18,9 @@
   padding: 12px 24px;
   display: inline-flex;
 }
+
+@media screen and (max-width: 994px) {
+  .heroContainer {
+    height: 100vh;
+  }
+}

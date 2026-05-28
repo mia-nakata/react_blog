@@ -13,7 +13,6 @@
 }
 
 .iconSvg {
-  margin-bottom: 6px;
   transition: transform 0.3s ease;
   transform-origin: center center;
 }
@@ -23,7 +22,11 @@
 }
 
 .text {
+  font-family: 'Lexend Peta', sans-serif;
   font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+
+.button.open .text {
+  color: #FFFFFF;
 }

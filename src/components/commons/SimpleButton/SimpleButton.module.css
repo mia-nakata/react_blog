@@ -1,12 +1,13 @@
 /* SimpleButton.module.css */
 
 .button {
+  font-family: "Zen Kaku Gothic New", sans-serif;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px; 
+  padding: 11px 41px; 
   border-radius: 9999px; 
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #FFFFFF;
   border: none;
